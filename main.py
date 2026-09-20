@@ -14,18 +14,7 @@ def receipt(e): # function for button
     product10 = document.getElementById('cone3') # ID cone3 is put into variable product10
     product11 = document.getElementById('cone4') # ID cone4 is put into variable product11
     vat = 0.12 # 12% VAT 
-    subtotal = 
-    float((product1).value) * product1.checked +
-    float((product2).value) * product2.checked + 
-    float((product3).value) * product3.checked + 
-    float((product4).value) * product4.checked + 
-    float((product5).value) * product5.checked + 
-    float((product6).value) * product6.checked + 
-    float((product7).value) * product7.checked + 
-    float((product8).value) * product8.checked + 
-    float((product9).value) * product9.checked + 
-    float((product10).value) * product10.checked + 
-    float((product11).value) * product11.checked # .value to use the value of each product, .checked to see if the checkbox is checked, and float to make the number a floating point
+    subtotal = float((product1).value) * product1.checked + float((product2).value) * product2.checked + float((product3).value) * product3.checked + float((product4).value) * product4.checked + float((product5).value) * product5.checked + float((product6).value) * product6.checked + float((product7).value) * product7.checked + float((product8).value) * product8.checked + float((product9).value) * product9.checked + float((product10).value) * product10.checked + float((product11).value) * product11.checked # .value to use the value of each product, .checked to see if the checkbox is checked, and float to make the number a floating point
     valueaddedtax = subtotal * float(vat) # takes 12% of the subtotal
     total = subtotal + valueaddedtax # adds the VAT to the subtotal
     display("Subtotal: " + str(subtotal) + " Php", target="output") # displays the subtotal
