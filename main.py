@@ -2,6 +2,7 @@
 from pyscript import display, document
 
 def receipt(e): # function for button
+    document.getElementById('output').innerHTML = ""
     product1 = document.getElementById('dip') # ID dip is put into variable product1
     product2 = document.getElementById('sundae') # ID sundae is put into variable product2
     product3 = document.getElementById('bsplit') # ID bsplit is put into variable product3
