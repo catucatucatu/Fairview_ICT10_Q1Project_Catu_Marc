@@ -23,6 +23,7 @@ def receipt(e): # function for button
     display("Total: " + str(total) + " Php", target="output") # displays the total
 
 def sku(e):
+    document.getElementById('output').innerHTML = ""
     category1 = document.getElementById('category').value # finds the category picked
     product1 = document.getElementById('product').value # finds the product inputted
     quantity1 = document.getElementById('quantity').value # finds the amount of the product
